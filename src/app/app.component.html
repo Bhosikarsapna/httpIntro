@@ -1,0 +1,18 @@
+
+
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <!-- <app-post-dashboard></app-post-dashboard> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div class="loader" *ngIf="isLoading">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>

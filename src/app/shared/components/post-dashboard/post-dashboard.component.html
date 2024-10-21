@@ -1,0 +1,12 @@
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let post of allPosts">
+            <app-post-card [fromDashBoard]="post"></app-post-card>
+        </div>
+    </div>
+</div>
